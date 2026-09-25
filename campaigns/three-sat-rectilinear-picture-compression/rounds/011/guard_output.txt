@@ -1,0 +1,1 @@
+{'eligible_placements': 16, 'guarded_placements': 0, 'false_costly': 0, 'exact_or': 0}

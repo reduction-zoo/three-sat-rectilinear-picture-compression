@@ -12,6 +12,9 @@ Tags: rectangle cover, clause gadget, three-way junction, state-selective tap. T
 
 Budget additivity before adding a clause cell is insufficient. A clause construction must prove isolation after the cell is added and under all input states; local tap truth tables cannot simply be composed.
 
+Round 011 found a related packing constraint: every one of the 16 additive three-core placements has all four orthogonal neighbors of the shared cell occupied by a core or state port. An adjacent disjoint guard cannot be added to those placements.
+
 ## Use history
 
 Created 2026-09-25 from round 010. Intended board promotion is pending; the board was not edited.
+Updated 2026-09-25 from round 011.
