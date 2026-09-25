@@ -1,12 +1,12 @@
 # Campaign state
 
-Budget: 20 rounds. Used: 11 (round 011 open).
+Budget: 20 rounds. Used: 12 (round 012 open).
 Board source: 834a23a845589826383af2fdf2f1425e02e88864.
 
 Capability probe (2026-09-25): Python 3.12.14 at `/Users/xiweipan/.local/bin/python3`; uv 0.12.17 at `/Users/xiweipan/.local/bin/uv`; Z3 executable 5.1.0 at `/opt/homebrew/bin/z3`; Kissat 4.0.4 at `/opt/homebrew/bin/kissat`; Typst 0.15.1 at `/opt/homebrew/bin/typst`; Lean 4.34.1 at `/opt/homebrew/bin/lean`; Lake 5.0.0 at `/opt/homebrew/bin/lake`. Python Z3 binding selected for Prepare; locked version recorded in `uv.lock`. Mathlib status: not probed because formalization is not requested. Writing skill is available in the session catalogue. No capability blocker for Prepare.
 Prepare: 120 fixed source cases, independent Z3 and exhaustive source checks, exact target rectangle-cover oracle and direct validators; see [preparation](work/preparation.md). Self-test passed 2026-09-25. No construction claim follows from Prepare.
-Current claim: finite thick exclusive-port wires through five cores, plus one four-core wire with two simultaneously free same-state taps; the compact shared-cell clause family leaks and has no room for an adjacent guard. No general induction or 3SAT rule.
-Next action: a clause mechanism with reserved space, or a different reduction route.
+Current claim: finite thick exclusive-port wires through five cores, plus one four-core wire with two simultaneously free same-state taps; tested one-cell and 2×2 clause interfaces fail. No general induction or 3SAT rule.
+Next action: change construction/proof route or find a complete published source.
 
 | Round | Mechanism / scope | First check | Outcome | Evidence |
 |---|---|---|---|---|
@@ -21,3 +21,4 @@ Next action: a clause mechanism with reserved space, or a different reduction ro
 | 009 | Occurrence tap and fanout | Find third port compatible with one state only | Local taps can fail after joining; alternate four-core wire has two jointly free same-state taps | [record](rounds/009/round.md) |
 | 010 | Three-input clause junction | Enumerate three-core shared-cell placements and test eight-state OR table | All 16 additive inactive placements leak at the clause cell | [record](rounds/010/round.md) |
 | 011 | Guarded two-cell clause marker | Add one neighboring cell to each additive shared-cell junction | Zero legal adjacent guard positions across all 16 eligible geometries | [record](rounds/011/round.md) |
+| 012 | Reserved 2×2 clause checker | Align three state-selective taps with distinct checker cells | 74 placements reject the false row but all fail an active row | [record](rounds/012/round.md) |

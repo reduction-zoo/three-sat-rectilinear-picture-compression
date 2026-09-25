@@ -14,7 +14,10 @@ Budget additivity before adding a clause cell is insufficient. A clause construc
 
 Round 011 found a related packing constraint: every one of the 16 additive three-core placements has all four orthogonal neighbors of the shared cell occupied by a core or state port. An adjacent disjoint guard cannot be added to those placements.
 
+Round 012 reserved a 2×2 checker and placed three taps on different checker cells. Among 256 clear geometries, 74 had an additive inactive baseline and a costly false checker row, but every one of those 74 rejected at least one active input at the same budget. A checker must balance both sides of the truth table; merely making the false row costly is insufficient.
+
 ## Use history
 
 Created 2026-09-25 from round 010. Intended board promotion is pending; the board was not edited.
 Updated 2026-09-25 from round 011.
+Updated 2026-09-25 from round 012.
