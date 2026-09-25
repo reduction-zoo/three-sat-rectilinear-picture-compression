@@ -1,0 +1,1 @@
+{'exclusive_pairs': 224, 'distinct_tap_oracle_queries': 1548, 'maximum_same_state_taps': 2, 'pairs_by_maximum_taps': {0: 24, 1: 32, 2: 168}, 'examples': []}

@@ -12,6 +12,9 @@ Tags: rectangle cover, Boolean gadget, fanout, occurrence tap, thick wire. The 3
 
 Local tap selectivity alone is insufficient: it can disappear after joining cores. The alternate core justifies investigating a clause junction and a general composition invariant, but finite fanout does not establish arbitrary occurrence count or global geometric isolation.
 
+[Round 020](../../campaigns/three-sat-rectilinear-picture-compression/rounds/020/round.md) exhausted the thick 3×3 core family with individually free but jointly costly exterior state ports. Among 224 such port pairs, no pair has more than two one-cell exterior taps selective for the same state (24 have zero, 32 have one, 168 have two). This bounds the direct degree-three same-state attachment route in that finite family, not larger or nonlocal fanout mechanisms.
+
 ## Use history
 
 Created 2026-09-25 from round 009. Intended board promotion is pending; the board was not edited.
+Updated 2026-09-25 from round 020.
