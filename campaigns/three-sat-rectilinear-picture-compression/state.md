@@ -1,12 +1,12 @@
 # Campaign state
 
-Budget: 20 rounds. Used: 17 (round 017 open).
+Budget: 20 rounds. Used: 18 (round 018 open).
 Board source: 834a23a845589826383af2fdf2f1425e02e88864.
 
 Capability probe (2026-09-25): Python 3.12.14 at `/Users/xiweipan/.local/bin/python3`; uv 0.12.17 at `/Users/xiweipan/.local/bin/uv`; Z3 executable 5.1.0 at `/opt/homebrew/bin/z3`; Kissat 4.0.4 at `/opt/homebrew/bin/kissat`; Typst 0.15.1 at `/opt/homebrew/bin/typst`; Lean 4.34.1 at `/opt/homebrew/bin/lean`; Lake 5.0.0 at `/opt/homebrew/bin/lake`. Python Z3 binding selected for Prepare; locked version recorded in `uv.lock`. Mathlib status: not probed because formalization is not requested. Writing skill is available in the session catalogue. No capability blocker for Prepare.
 Prepare: 120 fixed source cases, independent Z3 and exhaustive source checks, exact target rectangle-cover oracle and direct validators; see [preparation](work/preparation.md). Self-test passed 2026-09-25. No construction claim follows from Prepare.
-Current claim: a general exact endpoint-budget lemma for one repeated thick wire; a fixed-width diagonal-band exact DP applies to every length of that wire. One four-core alternate wire has two simultaneously free same-state taps. Tested one-cell and 2×2 clause interfaces fail. No 3SAT rule or all-cover assignment decoder.
-Next action: a genuinely global clause/encoding mechanism. Round 016 found long-wire junction geometries, but its lower-bound solver returned unknown on eight tested placements.
+Current claim: a general exact endpoint-budget lemma for one repeated thick wire; a fixed-width diagonal-band exact DP applies to every length of that wire. A finite two-input exact-cost OR checker exists, alongside a four-core alternate wire with two simultaneously free same-state taps. Tested three-input clause interfaces fail. No 3SAT rule or all-cover assignment decoder.
+Next action: compose edge checkers with variable states and test budget additivity; long-wire three-arm junctions remain undecided.
 
 | Round | Mechanism / scope | First check | Outcome | Evidence |
 |---|---|---|---|---|
@@ -27,3 +27,4 @@ Next action: a genuinely global clause/encoding mechanism. Round 016 found long-
 | 015 | Antirectangle induction for thick wire | Search repeating `2t`/`2t+1` lower-bound witnesses | General exact endpoint-budget theorem proved for one explicit wire | [record](rounds/015/round.md) |
 | 016 | Clause junction of certified long wires | Try three disjoint rotated endpoint wires at one clause cell | 128 clear geometries per tested length; eight false-row certificate searches returned unknown | [record](rounds/016/round.md) |
 | 017 | Diagonal-band dynamic programming boundary | Prove bounded rectangle spans and test exact row-scan DP | Exact fixed-parameter DP proved; 21 independent oracle comparisons agree | [record](rounds/017/round.md) |
+| 018 | Two-input edge checker for Vertex Cover | Search a shared marker with exactly the two-input OR table | 24 local placements have exact 7/6/6/6 costs; composition unproved | [record](rounds/018/round.md) |
