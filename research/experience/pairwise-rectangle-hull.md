@@ -14,4 +14,4 @@ This supplies a local compatibility criterion and a lower-bound mechanism for re
 
 ## Use history
 
-Created 2026-09-25 in round 002. Intended promotion to the board's local shared collection is pending separate access; no board edits made.
+Created 2026-09-25 in round 002. [Round 003](../../campaigns/three-sat-rectilinear-picture-compression/rounds/003/round.md) applied the lemma to anchor cells; it identified a filler-cell budget failure, without producing a reduction. Intended promotion to the board's local shared collection is pending separate access; no board edits made.
