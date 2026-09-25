@@ -1,0 +1,11 @@
+{'core': 'first', 'tap': (3, 4), 'free': True, 'endpoint_compatibility': [True, False]}
+{'core': 'second', 'tap': (6, 1), 'free': True, 'endpoint_compatibility': [False, True]}
+{'core': 'third', 'tap': (0, 6), 'free': True, 'endpoint_compatibility': [True, False]}
+{'core': 'fourth', 'tap': (8, -2), 'free': True, 'endpoint_compatibility': [False, True]}
+{'cores': ['first', 'second'], 'both_taps_free': False, 'with_compatible_endpoint': None}
+{'cores': ['first', 'third'], 'both_taps_free': True, 'with_compatible_endpoint': True}
+{'cores': ['first', 'fourth'], 'both_taps_free': False, 'with_compatible_endpoint': None}
+{'cores': ['second', 'third'], 'both_taps_free': False, 'with_compatible_endpoint': None}
+{'cores': ['second', 'fourth'], 'both_taps_free': True, 'with_compatible_endpoint': True}
+{'cores': ['third', 'fourth'], 'both_taps_free': False, 'with_compatible_endpoint': None}
+{'endpoints': ((-2, 6), (8, -4)), 'tap_results': [{'core': 'first', 'tap': (3, 4), 'free': True, 'endpoint_compatibility': [True, False]}, {'core': 'second', 'tap': (6, 1), 'free': True, 'endpoint_compatibility': [False, True]}, {'core': 'third', 'tap': (0, 6), 'free': True, 'endpoint_compatibility': [True, False]}, {'core': 'fourth', 'tap': (8, -2), 'free': True, 'endpoint_compatibility': [False, True]}], 'joint_results': [{'cores': ['first', 'second'], 'both_taps_free': False, 'with_compatible_endpoint': None}, {'cores': ['first', 'third'], 'both_taps_free': True, 'with_compatible_endpoint': True}, {'cores': ['first', 'fourth'], 'both_taps_free': False, 'with_compatible_endpoint': None}, {'cores': ['second', 'third'], 'both_taps_free': False, 'with_compatible_endpoint': None}, {'cores': ['second', 'fourth'], 'both_taps_free': True, 'with_compatible_endpoint': True}, {'cores': ['third', 'fourth'], 'both_taps_free': False, 'with_compatible_endpoint': None}]}
