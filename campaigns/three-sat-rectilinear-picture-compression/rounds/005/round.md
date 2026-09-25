@@ -20,10 +20,14 @@ Prior evidence: round 003 shows arbitrary filler can consume budget; round 004's
 
 Its maximal rectangles are the first end pair, last end pair, and one of two middle pairs (horizontal or vertical). The minimum is three: the prepared independent target oracle proves `K=2` infeasible and returns legal `K=3` covers. Thus a local binary orientation exists in the maximalized representation.
 
-Crucial limitation: the actual target accepts *all* legal rectangles, including a singleton center cell. Two end-pair rectangles plus that singleton also use three rectangles. Therefore the tile alone has a third uncommitted witness form. It can be enlarged to either middle pair without cost, but an arbitrary target cover does not explicitly encode a Boolean state until surrounding port obligations force one. A decoder cannot simply read the raw middle orientation. No full F/G or composition proof was obtained. Actual standalone target instances solved: 2 budgets on one tile; source/recovery instances: 0/0.
+Crucial limitation: the actual target accepts *all* legal rectangles, including a singleton center cell. Two end-pair rectangles plus that singleton also use three rectangles. Therefore the tile alone has a third uncommitted witness form. It can be enlarged to either middle pair without cost, but an arbitrary target cover does not explicitly encode a Boolean state until surrounding port obligations force one. A decoder cannot simply read the raw middle orientation.
 
-Experience extraction: none yet; the staircase is only an uncomposed local observation and its possible value depends on the next propagation test.
+Same-strategy composition check: `composition_probe.py` joined two copies at an endpoint, producing a 5×5 nine-cell staircase. The independent target oracle established minimum cover size 5 (`K=4` UNSAT, `K=5` SAT). Exhaustive enumeration of the eight maximal rectangles found **four** minimum maximal covers, printed by the script, corresponding to a freely moving phase transition along the path. In particular, sharing the endpoint does not enforce a consistent Boolean choice in the two copies. Expected: only two global phases. Actual: four covers. The unused orientations are not eliminated by a tight rectangle budget. This invalidates the proposed propagation interface, though a different coupling gadget might work.
+
+No full F/G or composition proof was obtained. Actual target instances solved: four budget checks across the local and joined tile; source/recovery instances: 0/0. The bounded search excludes the two tested shapes and this endpoint-sharing composition, not other geometries or joins. Remaining obligations: a tile with robust ports and a coupling that has exactly the intended global states.
+
+Experience extraction: [staircase endpoint coupling counterexample](../../../../research/experience/staircase-coupling.md).
 
 ## Next action
 
-Test whether overlapping two staircase tiles transmits one of the two maximalized phases with no ambiguous optimum; do this before enlarging the local search.
+Move to a distinct mechanism; do not scale this endpoint-sharing staircase as a Boolean wire without a new coupling rule.
