@@ -14,4 +14,4 @@ Do not infer global assignment consistency from a local two-cover tile. Count al
 
 ## Use history
 
-Created 2026-09-25 in round 005. Intended board promotion is pending; the board was not edited.
+Created 2026-09-25 in round 005. [Round 006](../../campaigns/three-sat-rectilinear-picture-compression/rounds/006/round.md) used the warning to require two phases differing in more than one rectangle; the 4×4 family had no such tile. Intended board promotion is pending; the board was not edited.

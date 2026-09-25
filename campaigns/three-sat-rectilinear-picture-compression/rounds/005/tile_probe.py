@@ -30,25 +30,26 @@ def maximal_rectangles(ones, h, w):
             if not any(cells < other for _, other in rectangles)]
 
 
-for h, w in ((3, 3), (3, 4)):
-    checked = connected_count = two_state_count = 0
-    examples = []
-    for bits in product((0, 1), repeat=h * w):
-        checked += 1
-        ones = {(r, c) for r in range(h) for c in range(w) if bits[r * w + c]}
-        if not connected(ones, h, w) or any(not any(r == row for r, _ in ones) for row in range(h)) or any(not any(c == col for _, c in ones) for col in range(w)):
-            continue
-        connected_count += 1
-        rects = maximal_rectangles(ones, h, w)
-        for k in range(1, len(rects) + 1):
-            covers = [tuple(rects[i][0] for i in ids) for ids in combinations(range(len(rects)), k)
-                      if set().union(*(rects[i][1] for i in ids)) == ones]
-            if covers:
-                break
-        if len(covers) == 2:
-            two_state_count += 1
-            if len(examples) < 5:
-                examples.append({"matrix": [list(bits[r * w:(r + 1) * w]) for r in range(h)],
-                                 "minimum": k, "covers": covers})
-    print({"shape": [h, w], "checked": checked, "connected_full_span": connected_count,
-           "two_state_tiles": two_state_count, "examples": examples})
+if __name__ == "__main__":
+    for h, w in ((3, 3), (3, 4)):
+        checked = connected_count = two_state_count = 0
+        examples = []
+        for bits in product((0, 1), repeat=h * w):
+            checked += 1
+            ones = {(r, c) for r in range(h) for c in range(w) if bits[r * w + c]}
+            if not connected(ones, h, w) or any(not any(r == row for r, _ in ones) for row in range(h)) or any(not any(c == col for _, c in ones) for col in range(w)):
+                continue
+            connected_count += 1
+            rects = maximal_rectangles(ones, h, w)
+            for k in range(1, len(rects) + 1):
+                covers = [tuple(rects[i][0] for i in ids) for ids in combinations(range(len(rects)), k)
+                          if set().union(*(rects[i][1] for i in ids)) == ones]
+                if covers:
+                    break
+            if len(covers) == 2:
+                two_state_count += 1
+                if len(examples) < 5:
+                    examples.append({"matrix": [list(bits[r * w:(r + 1) * w]) for r in range(h)],
+                                     "minimum": k, "covers": covers})
+        print({"shape": [h, w], "checked": checked, "connected_full_span": connected_count,
+               "two_state_tiles": two_state_count, "examples": examples})
