@@ -12,6 +12,9 @@ Tags: rectangle cover, thick core, Vertex Cover, OR checker, exact budget. Two d
 
 Require an exact cost table, not merely a yes/no threshold table, before summing gadget budgets. The remaining hard step is to create one fixed global picture whose cover states select variable values while preserving edge costs and preventing cross-gadget discounts.
 
+Round 019 found three clear two-edge compositions around one shared core. Each preserves the Vertex Cover threshold at budget nine for all eight state assignments, but two uncovered edges together cost only one extra rectangle. Thus even an exact isolated cost table need not have additive penalties after composition; threshold correctness needs a separate global proof.
+
 ## Use history
 
 Created 2026-09-25 from round 018. Intended board promotion is pending; the board was not edited.
+Updated 2026-09-25 from round 019.
