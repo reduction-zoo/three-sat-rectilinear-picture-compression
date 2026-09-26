@@ -1,6 +1,6 @@
 # Campaign state
 
-Budget: 40 rounds (20 additional rounds authorized after the first closeout). Used: 35. Remaining: 5. Status: `active`.
+Budget: 40 rounds (20 additional rounds authorized after the first closeout). Used: 36. Remaining: 4. Status: `active`.
 Board source: 834a23a845589826383af2fdf2f1425e02e88864.
 
 Capability probe (2026-09-25): Python 3.12.14 at `/Users/xiweipan/.local/bin/python3`; uv 0.12.17 at `/Users/xiweipan/.local/bin/uv`; Z3 executable 5.1.0 at `/opt/homebrew/bin/z3`; Kissat 4.0.4 at `/opt/homebrew/bin/kissat`; Typst 0.15.1 at `/opt/homebrew/bin/typst`; Lean 4.34.1 at `/opt/homebrew/bin/lean`; Lake 5.0.0 at `/opt/homebrew/bin/lake`. Python Z3 binding selected for Prepare; locked version recorded in `uv.lock`. Mathlib status: not probed because formalization is not requested. Writing skill is available in the session catalogue. No capability blocker for Prepare.
@@ -51,3 +51,4 @@ Closeout checks (2026-09-25): reran the Prepare self-test (120 source cases), ro
 | 033 | Two-turn adjacent swap | Port clearance and exact two-channel table | Widened swap passes all 16 states; staggered port connections remain | [record](rounds/033/round.md) |
 | 034 | Mandatory side strips for long corridors | Gap-four implication table | Wide corridors and flat swaps pass; two-swap baseline is nonadditive | [record](rounds/034/round.md) |
 | 035 | Rectangle ownership across tile cuts | All crossing rectangles must be designated beams | Exact beam-only cut; additive two-tile count and conditional decoder lemma | [record](rounds/035/round.md) |
+| 036 | Direct terminal OR synthesis | All 3×3 masks with top-entering inputs | No terminal in 384 eligible 3×3 input-pair geometries | [record](rounds/036/round.md) |
