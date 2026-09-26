@@ -1,0 +1,4 @@
+{'input': False, 'output_required': False, 'cost': 9}
+{'input': False, 'output_required': True, 'cost': 9}
+{'input': True, 'output_required': False, 'cost': 8}
+{'input': True, 'output_required': True, 'cost': 9}

@@ -1,0 +1,3 @@
+{'turns': 2, 'costs': [14, 15, 14, 14], 'expected_form': 'B,B+1,B,B'}
+{'turns': 4, 'costs': [28, 29, 28, 28], 'expected_form': 'B,B+1,B,B'}
+{'turns': 6, 'costs': [42, 42, 42, 42], 'expected_form': 'B,B+1,B,B'}

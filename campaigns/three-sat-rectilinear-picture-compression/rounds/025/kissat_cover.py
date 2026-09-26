@@ -2,7 +2,7 @@
 import subprocess
 from geometry import maximal_rectangles
 
-def solve(cells,required,budget,forced=(),timeout=30):
+def solve(cells,required,budget,forced=(),forbidden=(),timeout=30):
     assert required<=cells and budget>=0
     rects=maximal_rectangles(frozenset(cells)); n=len(rects)
     clauses={frozenset(i+1 for i,(a,b,d,e) in enumerate(rects) if a<=r<=b and d<=c<=e) for r,c in required}
@@ -10,6 +10,7 @@ def solve(cells,required,budget,forced=(),timeout=30):
     for clause in sorted(clauses,key=len):
         if not any(set(other)<=clause for other in cnf): cnf.append(list(clause))
     for rect in forced: cnf.append([rects.index(rect)+1])
+    for rect in forbidden: cnf.append([-rects.index(rect)-1])
     var=n; prev=[]
     for x in range(1,n+1):
         curr=list(range(var+1,var+min(x,budget+1)+1)); var+=len(curr)
@@ -26,5 +27,5 @@ def solve(cells,required,budget,forced=(),timeout=30):
     chosen={int(v) for line in result.stdout.splitlines() if line.startswith('v ') for v in line.split()[1:] if int(v)>0}
     witness=[r for i,r in enumerate(rects,1) if i in chosen]
     covered={(r,c) for a,b,d,e in witness for r in range(a,b+1) for c in range(d,e+1)}
-    assert required<=covered<=cells and len(witness)<=budget and all(r in witness for r in forced)
+    assert required<=covered<=cells and len(witness)<=budget and all(r in witness for r in forced) and not any(r in witness for r in forbidden)
     return witness

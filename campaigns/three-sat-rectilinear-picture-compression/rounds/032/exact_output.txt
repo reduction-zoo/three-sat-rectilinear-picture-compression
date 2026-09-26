@@ -1,0 +1,4 @@
+{'input': False, 'output': False, 'cost': 9, 'potential_prediction': 10}
+{'input': False, 'output': True, 'cost': 9, 'potential_prediction': 9}
+{'input': True, 'output': False, 'cost': 8, 'potential_prediction': 8}
+{'input': True, 'output': True, 'cost': 9, 'potential_prediction': 9}
