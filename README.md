@@ -48,5 +48,6 @@ a new allocation; practical matrix size and general attachment correctness are
 the next priorities.
 
 Fourteen [local experience entries](research/experience/README.md) await separately
-authorized board promotion. Nothing was published and the board was not edited.
+authorized board promotion. This public archive preserves the incomplete campaign;
+the board has not recorded a solution.
 Board source commit: `834a23a845589826383af2fdf2f1425e02e88864`.
