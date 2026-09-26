@@ -1,0 +1,16 @@
+{'pairs': 1, 'input': False, 'output': False, 'expected': 14, 'below': False, 'at': True}
+{'pairs': 1, 'input': False, 'output': True, 'expected': 15, 'below': False, 'at': True}
+{'pairs': 1, 'input': True, 'output': False, 'expected': 14, 'below': False, 'at': True}
+{'pairs': 1, 'input': True, 'output': True, 'expected': 14, 'below': False, 'at': True}
+{'pairs': 2, 'input': False, 'output': False, 'expected': 28, 'below': False, 'at': True}
+{'pairs': 2, 'input': False, 'output': True, 'expected': 29, 'below': False, 'at': True}
+{'pairs': 2, 'input': True, 'output': False, 'expected': 28, 'below': False, 'at': True}
+{'pairs': 2, 'input': True, 'output': True, 'expected': 28, 'below': False, 'at': True}
+{'pairs': 3, 'input': False, 'output': False, 'expected': 42, 'below': False, 'at': True}
+{'pairs': 3, 'input': False, 'output': True, 'expected': 43, 'below': False, 'at': True}
+{'pairs': 3, 'input': True, 'output': False, 'expected': 42, 'below': False, 'at': True}
+{'pairs': 3, 'input': True, 'output': True, 'expected': 42, 'below': False, 'at': True}
+{'pairs': 4, 'input': False, 'output': False, 'expected': 56, 'below': False, 'at': True}
+{'pairs': 4, 'input': False, 'output': True, 'expected': 57, 'below': False, 'at': True}
+{'pairs': 4, 'input': True, 'output': False, 'expected': 56, 'below': False, 'at': True}
+{'pairs': 4, 'input': True, 'output': True, 'expected': 56, 'below': False, 'at': True}

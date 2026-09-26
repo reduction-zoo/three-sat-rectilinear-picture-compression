@@ -1,0 +1,2 @@
+{'span': 18, 'costs': [9, 9, 9, 9], 'expected_form': 'B,B+1,B,B', 'beam': (0, 12, 9, 13)}
+{'span': 24, 'costs': [9, 9, 9, 9], 'expected_form': 'B,B+1,B,B', 'beam': (0, 12, 9, 19)}
