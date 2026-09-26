@@ -1,0 +1,35 @@
+{'crossing_rectangles': [(1, 49, 55, 55), (26, 74, 44, 44)]}
+{'tiles': 1, 'baseline': 44}
+{'in': (False, False), 'out': (False, False), 'expected': 44, 'below': False, 'at': True}
+{'in': (False, False), 'out': (False, True), 'expected': 45, 'below': False, 'at': True}
+{'in': (False, False), 'out': (True, False), 'expected': 45, 'below': False, 'at': True}
+{'in': (False, False), 'out': (True, True), 'expected': 46, 'below': False, 'at': True}
+{'in': (False, True), 'out': (False, False), 'expected': 44, 'below': False, 'at': True}
+{'in': (False, True), 'out': (False, True), 'expected': 44, 'below': False, 'at': True}
+{'in': (False, True), 'out': (True, False), 'expected': 45, 'below': False, 'at': True}
+{'in': (False, True), 'out': (True, True), 'expected': 45, 'below': False, 'at': True}
+{'in': (True, False), 'out': (False, False), 'expected': 44, 'below': False, 'at': True}
+{'in': (True, False), 'out': (False, True), 'expected': 45, 'below': False, 'at': True}
+{'in': (True, False), 'out': (True, False), 'expected': 44, 'below': False, 'at': True}
+{'in': (True, False), 'out': (True, True), 'expected': 45, 'below': False, 'at': True}
+{'in': (True, True), 'out': (False, False), 'expected': 44, 'below': False, 'at': True}
+{'in': (True, True), 'out': (False, True), 'expected': 44, 'below': False, 'at': True}
+{'in': (True, True), 'out': (True, False), 'expected': 44, 'below': False, 'at': True}
+{'in': (True, True), 'out': (True, True), 'expected': 44, 'below': False, 'at': True}
+{'tiles': 2, 'baseline': 88}
+{'in': (False, False), 'out': (False, False), 'expected': 88, 'below': False, 'at': True}
+{'in': (False, False), 'out': (False, True), 'expected': 89, 'below': False, 'at': True}
+{'in': (False, False), 'out': (True, False), 'expected': 89, 'below': False, 'at': True}
+{'in': (False, False), 'out': (True, True), 'expected': 90, 'below': False, 'at': True}
+{'in': (False, True), 'out': (False, False), 'expected': 88, 'below': False, 'at': True}
+{'in': (False, True), 'out': (False, True), 'expected': 88, 'below': False, 'at': True}
+{'in': (False, True), 'out': (True, False), 'expected': 89, 'below': False, 'at': True}
+{'in': (False, True), 'out': (True, True), 'expected': 89, 'below': False, 'at': True}
+{'in': (True, False), 'out': (False, False), 'expected': 88, 'below': False, 'at': True}
+{'in': (True, False), 'out': (False, True), 'expected': 89, 'below': False, 'at': True}
+{'in': (True, False), 'out': (True, False), 'expected': 88, 'below': False, 'at': True}
+{'in': (True, False), 'out': (True, True), 'expected': 89, 'below': False, 'at': True}
+{'in': (True, True), 'out': (False, False), 'expected': 88, 'below': False, 'at': True}
+{'in': (True, True), 'out': (False, True), 'expected': 88, 'below': False, 'at': True}
+{'in': (True, True), 'out': (True, False), 'expected': 88, 'below': False, 'at': True}
+{'in': (True, True), 'out': (True, True), 'expected': 88, 'below': False, 'at': True}

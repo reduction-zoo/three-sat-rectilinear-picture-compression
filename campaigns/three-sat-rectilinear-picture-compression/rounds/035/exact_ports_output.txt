@@ -1,0 +1,16 @@
+{'in': (False, False), 'out': (False, False), 'exact_cost': 44}
+{'in': (False, False), 'out': (False, True), 'exact_cost': 45}
+{'in': (False, False), 'out': (True, False), 'exact_cost': 45}
+{'in': (False, False), 'out': (True, True), 'exact_cost': 46}
+{'in': (False, True), 'out': (False, False), 'exact_cost': 44}
+{'in': (False, True), 'out': (False, True), 'exact_cost': 44}
+{'in': (False, True), 'out': (True, False), 'exact_cost': 45}
+{'in': (False, True), 'out': (True, True), 'exact_cost': 45}
+{'in': (True, False), 'out': (False, False), 'exact_cost': 44}
+{'in': (True, False), 'out': (False, True), 'exact_cost': 45}
+{'in': (True, False), 'out': (True, False), 'exact_cost': 44}
+{'in': (True, False), 'out': (True, True), 'exact_cost': 45}
+{'in': (True, True), 'out': (False, False), 'exact_cost': 44}
+{'in': (True, True), 'out': (False, True), 'exact_cost': 44}
+{'in': (True, True), 'out': (True, False), 'exact_cost': 44}
+{'in': (True, True), 'out': (True, True), 'exact_cost': 44}
