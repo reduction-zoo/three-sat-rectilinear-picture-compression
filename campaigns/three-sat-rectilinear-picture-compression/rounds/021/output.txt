@@ -1,0 +1,1 @@
+{'binary_patterns': 512, 'huge_coordinate_rectangle': 'passed'}
