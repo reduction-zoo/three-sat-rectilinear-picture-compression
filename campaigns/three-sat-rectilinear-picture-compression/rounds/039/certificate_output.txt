@@ -1,0 +1,24 @@
+{'kind': 'swap', 'in': (False, False), 'out': (False, False), 'packing': 46}
+{'kind': 'swap', 'in': (False, False), 'out': (False, True), 'packing': 46}
+{'kind': 'swap', 'in': (False, False), 'out': (True, False), 'packing': 46}
+{'kind': 'swap', 'in': (False, False), 'out': (True, True), 'packing': 46}
+{'kind': 'swap', 'in': (False, True), 'out': (False, False), 'packing': 46}
+{'kind': 'swap', 'in': (False, True), 'out': (False, True), 'packing': 45}
+{'kind': 'swap', 'in': (False, True), 'out': (True, False), 'packing': 46}
+{'kind': 'swap', 'in': (False, True), 'out': (True, True), 'packing': 45}
+{'kind': 'swap', 'in': (True, False), 'out': (False, False), 'packing': 46}
+{'kind': 'swap', 'in': (True, False), 'out': (False, True), 'packing': 46}
+{'kind': 'swap', 'in': (True, False), 'out': (True, False), 'packing': 45}
+{'kind': 'swap', 'in': (True, False), 'out': (True, True), 'packing': 45}
+{'kind': 'swap', 'in': (True, True), 'out': (False, False), 'packing': 46}
+{'kind': 'swap', 'in': (True, True), 'out': (False, True), 'packing': 45}
+{'kind': 'swap', 'in': (True, True), 'out': (True, False), 'packing': 45}
+{'kind': 'swap', 'in': (True, True), 'out': (True, True), 'packing': 44}
+{'kind': 'left', 'in': (False,), 'out': (False,), 'packing': 16}
+{'kind': 'left', 'in': (False,), 'out': (True,), 'packing': 16}
+{'kind': 'left', 'in': (True,), 'out': (False,), 'packing': 16}
+{'kind': 'left', 'in': (True,), 'out': (True,), 'packing': 15}
+{'kind': 'right', 'in': (False,), 'out': (False,), 'packing': 16}
+{'kind': 'right', 'in': (False,), 'out': (True,), 'packing': 16}
+{'kind': 'right', 'in': (True,), 'out': (False,), 'packing': 16}
+{'kind': 'right', 'in': (True,), 'out': (True,), 'packing': 15}

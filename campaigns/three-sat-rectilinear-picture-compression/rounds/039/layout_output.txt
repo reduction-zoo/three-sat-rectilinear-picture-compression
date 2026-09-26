@@ -1,0 +1,8 @@
+{'target': (0, 1, 2), 'modules': 3, 'shape': [47, 59], 'interfaces': 0}
+{'target': (0, 2, 1), 'modules': 5, 'shape': [105, 109], 'interfaces': 3}
+{'target': (1, 0, 2), 'modules': 5, 'shape': [105, 109], 'interfaces': 3}
+{'target': (1, 2, 0), 'modules': 7, 'shape': [163, 159], 'interfaces': 6}
+{'target': (2, 0, 1), 'modules': 7, 'shape': [163, 137], 'interfaces': 6}
+{'target': (2, 1, 0), 'modules': 9, 'shape': [221, 187], 'interfaces': 9}
+{'target': (3, 2, 1, 0), 'modules': 16, 'shape': [411, 313], 'interfaces': 18}
+{'target': (1, 3, 0, 2), 'modules': 10, 'shape': [237, 207], 'interfaces': 9}

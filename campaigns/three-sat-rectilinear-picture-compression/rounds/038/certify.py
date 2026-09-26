@@ -2,10 +2,11 @@ from padded_source import padded_source,solve,maximal_rectangles,product
 from pathlib import Path
 import z3,json
 
-def packing(cells,forced,k):
+def packing(cells,forced,k,required=None):
     rectangles=maximal_rectangles(frozenset(cells))
     excluded={(r,c) for a,b,d,e in forced for r in range(a,b+1) for c in range(d,e+1)}
-    profiles={frozenset(i for i,(a,b,d,e) in enumerate(rectangles) if a<=r<=b and d<=c<=e):(r,c) for r,c in sorted(cells-excluded)}
+    required=cells if required is None else required
+    profiles={frozenset(i for i,(a,b,d,e) in enumerate(rectangles) if a<=r<=b and d<=c<=e):(r,c) for r,c in sorted(required-excluded)}
     keep=[]
     for profile in sorted(profiles,key=len):
         if not any(p<=profile for p in keep):keep.append(profile)

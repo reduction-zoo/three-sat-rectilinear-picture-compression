@@ -1,6 +1,6 @@
 # Campaign state
 
-Budget: 40 rounds (20 additional rounds authorized after the first closeout). Used: 39 (round 039 open). Remaining: 1. Status: `active`.
+Budget: 40 rounds (20 additional rounds authorized after the first closeout). Used: 39. Remaining: 1. Status: `active`.
 Board source: 834a23a845589826383af2fdf2f1425e02e88864.
 
 Capability probe (2026-09-25): Python 3.12.14 at `/Users/xiweipan/.local/bin/python3`; uv 0.12.17 at `/Users/xiweipan/.local/bin/uv`; Z3 executable 5.1.0 at `/opt/homebrew/bin/z3`; Kissat 4.0.4 at `/opt/homebrew/bin/kissat`; Typst 0.15.1 at `/opt/homebrew/bin/typst`; Lean 4.34.1 at `/opt/homebrew/bin/lean`; Lake 5.0.0 at `/opt/homebrew/bin/lake`. Python Z3 binding selected for Prepare; locked version recorded in `uv.lock`. Mathlib status: not probed because formalization is not requested. Writing skill is available in the session catalogue. No capability blocker for Prepare.
@@ -54,4 +54,4 @@ Closeout checks (2026-09-25): reran the Prepare self-test (120 source cases), ro
 | 036 | Direct terminal OR synthesis | All 3×3 masks with top-entering inputs | No terminal in 384 eligible 3×3 input-pair geometries | [record](rounds/036/round.md) |
 | 037 | Four-row terminal synthesis | Residual-cover DP and independent SAT check | Found and certified separated terminal with general 6/5/5/5 lemma | [record](rounds/037/round.md) |
 | 038 | Full vertex source with beam outputs | Closed-picture common activation cost | All constant-degree source states certified with one common activation charge | [record](rounds/038/round.md) |
-| 039 | Monotone routing with vacated intervals | Separated translator table and three-track permutation | Open | [record](rounds/039/round.md) |
+| 039 | Monotone routing with vacated intervals | Separated translator table and three-track permutation | Certified routing templates and monotone compiler; eight layouts pass ownership checks | [record](rounds/039/round.md) |

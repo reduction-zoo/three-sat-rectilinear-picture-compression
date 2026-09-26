@@ -1,0 +1,5 @@
+{'modules': 9, 'baseline': 234, 'shape': [221, 187], 'cells': 6463, 'maximal_rectangles': 618, 'interface_count': 9, 'crossing_count': 9}
+{'in': (False, False, False), 'out': (False, False, False), 'expected': 234, 'below': False, 'at': True}
+{'in': (False, False, False), 'out': (True, True, True), 'expected': 237, 'below': False, 'at': True}
+{'in': (True, False, True), 'out': (True, False, True), 'expected': 234, 'below': False, 'at': True}
+{'in': (False, True, False), 'out': (True, True, False), 'expected': 235, 'below': False, 'at': True}

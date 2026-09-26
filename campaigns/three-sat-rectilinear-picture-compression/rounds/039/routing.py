@@ -4,6 +4,7 @@ import sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'035'))
 from cut import tile,solve,maximal_rectangles
 from translator import translator
+from capped_swap import capped_swap
 
 class Layout:
     def __init__(self,positions):
@@ -48,8 +49,8 @@ class Layout:
 
     def swap(self,left,right):
         assert self.positions[right]-self.positions[left]==11
-        cells,inputs,outputs=tile();origin=self.positions[left]-5
-        self.add(cells,inputs,outputs,[left,right],44,lambda x:origin+x)
+        cells,inputs,outputs=capped_swap();origin=self.positions[left]-5
+        self.add(cells,inputs,outputs,[left,right],46,lambda x:origin+x)
 
 
 def route(target):

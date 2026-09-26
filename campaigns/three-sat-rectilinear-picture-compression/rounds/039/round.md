@@ -6,7 +6,13 @@ Compile a permutation into adjacent swaps while moving all tracks monotonically 
 
 ## Evidence and diagnosis
 
-Pending.
+Both translator output-wing directions have exact costs 16/17/16/16 at distances 8 and 31 (`translator_output.txt`). A first selection-and-parking layout overlapped a later wide swap input stem with the parked channel's translator (`routing_output.txt`, preserved in commit fc01887). Narrowing the swap's external caps to width two fixes this overlap; the capped swap's 16 states have baseline 46 (`cap_output.txt`).
+
+The routing implementation uses selection from right to left and parking rather than translating every unrelated track at each swap. Three-track reversal has nine modules, compressed shape 221×187, 6,463 one-cells and exactly nine inter-module maximal rectangles, all designated beams. Four boundary tests match baseline 234 plus unsupported outputs (`capped_routing_output.txt`). All six three-track permutations and two four-track permutations pass full ownership enumeration and ordering checks (`layout_output.txt`).
+
+All 24 capped-swap/translator local states now have explicit covers and forced-output antirectangle certificates; `verify_certificates.py` checks them directly without a solver (`verified_output.txt`). The [routing lemma](../../work/routing-lemma.md) states the monotone spacing invariant, independent cap extension, and polynomial sparse/explicit size bounds. The rectangle enumerator was optimized without changing its order or output; all 512 exhaustive small-picture comparisons and 511 target-oracle minima still pass (`rectangle_regression.txt`). No unknown results. Source F/G injections and recovery remain 0/0.
+
+Experience extraction: update the beam-cut entry. The remaining allocated attempt will compose sources, routing, terminals, and the source-to-bounded-degree-graph map; a complete executable rule and its 120-case verification are still outstanding.
 
 ## Next action
 

@@ -17,3 +17,5 @@ Put outgoing background on one side of a port and incoming background on the oth
 ## Use history
 
 Created 2026-09-25. No subsequent application yet. Intended board promotion remains pending separate authorization; no board edit made.
+
+Applied in [round 039](../../campaigns/three-sat-rectilinear-picture-compression/rounds/039/round.md): narrower external caps removed a genuine overlap, and eight routed permutations satisfy exact rectangle ownership. A general spacing invariant and constant-template certificates were recorded; full source integration remains pending.

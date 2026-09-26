@@ -1,0 +1,17 @@
+{'baseline': 46}
+{'in': (False, False), 'out': (False, False), 'expected': 46, 'below': False, 'at': True}
+{'in': (False, False), 'out': (False, True), 'expected': 47, 'below': False, 'at': True}
+{'in': (False, False), 'out': (True, False), 'expected': 47, 'below': False, 'at': True}
+{'in': (False, False), 'out': (True, True), 'expected': 48, 'below': False, 'at': True}
+{'in': (False, True), 'out': (False, False), 'expected': 46, 'below': False, 'at': True}
+{'in': (False, True), 'out': (False, True), 'expected': 46, 'below': False, 'at': True}
+{'in': (False, True), 'out': (True, False), 'expected': 47, 'below': False, 'at': True}
+{'in': (False, True), 'out': (True, True), 'expected': 47, 'below': False, 'at': True}
+{'in': (True, False), 'out': (False, False), 'expected': 46, 'below': False, 'at': True}
+{'in': (True, False), 'out': (False, True), 'expected': 47, 'below': False, 'at': True}
+{'in': (True, False), 'out': (True, False), 'expected': 46, 'below': False, 'at': True}
+{'in': (True, False), 'out': (True, True), 'expected': 47, 'below': False, 'at': True}
+{'in': (True, True), 'out': (False, False), 'expected': 46, 'below': False, 'at': True}
+{'in': (True, True), 'out': (False, True), 'expected': 46, 'below': False, 'at': True}
+{'in': (True, True), 'out': (True, False), 'expected': 46, 'below': False, 'at': True}
+{'in': (True, True), 'out': (True, True), 'expected': 46, 'below': False, 'at': True}
