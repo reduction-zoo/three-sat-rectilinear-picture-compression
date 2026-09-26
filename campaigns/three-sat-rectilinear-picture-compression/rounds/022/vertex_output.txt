@@ -1,0 +1,14 @@
+{'degree': 1, 'cells': 303, 'maximal_rectangles': 36, 'base_optimum': 15, 'paper_prediction': 15}
+{'degree': 1, 'selected': ((20, 5),), 'at_base': False, 'at_base_plus_one': True}
+{'degree': 2, 'cells': 651, 'maximal_rectangles': 58, 'base_optimum': 23, 'paper_prediction': 23}
+{'degree': 2, 'selected': ((33, 5),), 'at_base': False, 'at_base_plus_one': True}
+{'degree': 2, 'selected': ((33, -1),), 'at_base': False, 'at_base_plus_one': True}
+{'degree': 2, 'selected': ((33, 5), (33, -1)), 'at_base': False, 'at_base_plus_one': True}
+{'degree': 3, 'cells': 1082, 'maximal_rectangles': 82, 'base_optimum': 31, 'paper_prediction': 31}
+{'degree': 3, 'selected': ((46, 5),), 'at_base': False, 'at_base_plus_one': True}
+{'degree': 3, 'selected': ((46, -1),), 'at_base': False, 'at_base_plus_one': True}
+{'degree': 3, 'selected': ((46, -7),), 'at_base': False, 'at_base_plus_one': True}
+{'degree': 3, 'selected': ((46, 5), (46, -1)), 'at_base': False, 'at_base_plus_one': True}
+{'degree': 3, 'selected': ((46, 5), (46, -7)), 'at_base': False, 'at_base_plus_one': True}
+{'degree': 3, 'selected': ((46, -1), (46, -7)), 'at_base': False, 'at_base_plus_one': True}
+{'degree': 3, 'selected': ((46, 5), (46, -1), (46, -7)), 'at_base': False, 'at_base_plus_one': True}

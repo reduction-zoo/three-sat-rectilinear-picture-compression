@@ -1,6 +1,6 @@
 # Campaign state
 
-Budget: 40 rounds (20 additional rounds authorized after the first closeout). Used: 21. Remaining: 19. Status: `active`.
+Budget: 40 rounds (20 additional rounds authorized after the first closeout). Used: 22 (round 022 open). Remaining: 18. Status: `active`.
 Board source: 834a23a845589826383af2fdf2f1425e02e88864.
 
 Capability probe (2026-09-25): Python 3.12.14 at `/Users/xiweipan/.local/bin/python3`; uv 0.12.17 at `/Users/xiweipan/.local/bin/uv`; Z3 executable 5.1.0 at `/opt/homebrew/bin/z3`; Kissat 4.0.4 at `/opt/homebrew/bin/kissat`; Typst 0.15.1 at `/opt/homebrew/bin/typst`; Lean 4.34.1 at `/opt/homebrew/bin/lean`; Lake 5.0.0 at `/opt/homebrew/bin/lake`. Python Z3 binding selected for Prepare; locked version recorded in `uv.lock`. Mathlib status: not probed because formalization is not requested. Writing skill is available in the session catalogue. No capability blocker for Prepare.
@@ -37,3 +37,4 @@ Closeout checks (2026-09-25): reran the Prepare self-test (120 source cases), ro
 | 019 | Shared variable core for two edges | Combine two exact-cost checkers around one core and test eight states | Three compositions preserve threshold nine but double-uncovered penalties merge | [record](rounds/019/round.md) |
 | 020 | Degree-three same-state fanout | Search three selective taps and three clear edge-checker attachments | All 224 eligible 3×3 port pairs have at most two same-state taps; attachment stage unavailable in this family | [record](rounds/020/round.md) |
 | 021 | Coordinate rank compression of polygon covers | Prove separable monotone maps preserve rectangles and test huge coordinate gaps | General count-preserving compression proved; all 512 stretched 3×3 cases pass | [record](rounds/021/round.md) |
+| 022 | Digitize published beam system | Recover exact beam geometry and verify its port interface | Open | [record](rounds/022/round.md) |
