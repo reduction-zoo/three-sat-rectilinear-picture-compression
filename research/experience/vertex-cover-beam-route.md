@@ -21,3 +21,7 @@ Round 021 removed the area objection by rank compression. Round 022 digitized th
 ## Paired translation, 2026-09-25
 
 [Round 027](../../campaigns/three-sat-rectilinear-picture-compression/rounds/027/round.md) gives explicit opposed beam cores with preserved structural zeros. Two single-pair spans and chains through four pairs have the desired implication cost table. This is a finite isolated-chain result; it does not establish crossings, global independent backgrounds, or a full reduction.
+
+## Perpendicular crossing, 2026-09-25
+
+[Round 031](../../campaigns/three-sat-rectilinear-picture-compression/rounds/031/round.md) crosses the two shared rectangles of orthogonal translator pairs with disjoint cores. All 16 local states and 64 states of two joined crossings have exact additive unsupported-output penalties. Arbitrary network composition and routing remain unproved.
