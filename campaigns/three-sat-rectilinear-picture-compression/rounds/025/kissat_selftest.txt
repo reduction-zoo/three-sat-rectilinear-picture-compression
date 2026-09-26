@@ -1,0 +1,1 @@
+All 511 nonempty 3x3 pictures: minimum and rejecting budgets agree with Z3.

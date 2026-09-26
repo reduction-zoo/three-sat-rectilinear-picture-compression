@@ -1,0 +1,15 @@
+{'inputs': [20], 'baseline': 16, 'rectangles': 58}
+{'in': (False,), 'out': (False,), 'expected': 16, 'below': False, 'at': True}
+{'in': (False,), 'out': (True,), 'expected': 17, 'below': False, 'at': True}
+{'in': (True,), 'out': (False,), 'expected': 16, 'below': False, 'at': True}
+{'in': (True,), 'out': (True,), 'expected': 16, 'below': False, 'at': True}
+Traceback (most recent call last):
+  File "/Users/xiweipan/Codes/reduction-zoo/three-sat-rectilinear-picture-compression/campaigns/three-sat-rectilinear-picture-compression/rounds/025/check.py", line 10, in <module>
+    baseline=next(k for k in range(12*len(inputs),20*len(inputs)) if cover(cells,cells,k) is not None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xiweipan/Codes/reduction-zoo/three-sat-rectilinear-picture-compression/campaigns/three-sat-rectilinear-picture-compression/rounds/025/check.py", line 10, in <genexpr>
+    baseline=next(k for k in range(12*len(inputs),20*len(inputs)) if cover(cells,cells,k) is not None)
+                                                                     ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xiweipan/Codes/reduction-zoo/three-sat-rectilinear-picture-compression/campaigns/three-sat-rectilinear-picture-compression/rounds/022/geometry.py", line 53, in cover
+    raise RuntimeError(f"unknown: {solver.reason_unknown()}")
+RuntimeError: unknown: timeout
