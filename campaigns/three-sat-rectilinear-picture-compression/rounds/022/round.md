@@ -12,8 +12,14 @@ The exact Figure 7 core has six-rectangle horizontal and vertical states, while 
 
 The first regularized permutation stage fails the intended interface (`permutation_output.txt`): costs are 17 without incoming coverage and 16 with incoming coverage, and merely requiring the output endpoint does not force an actual beam from the machine. Its staircase row ordering differs from the figure, and its truncated bottom background can cover that endpoint. These are defects in this reconstruction, not a refutation of the published gadget. Preserve this initial experiment before repairing the geometry and the beam-state measurement.
 
-The faster maximal-rectangle enumerator was tested first against the existing exhaustive enumerator on all 512 binary 3×3 pictures. Every list agrees. Its solver checks witnesses cell by cell and treats unknown as an execution failure. No full F/G exists yet. Work continues within this attempt.
+The faster maximal-rectangle enumerator was tested first against the existing exhaustive enumerator on all 512 binary 3×3 pictures. Every list agrees. Its solver checks witnesses cell by cell and treats unknown as an execution failure.
+
+Follow-up within this strategy: measuring an actual outgoing beam rectangle, rather than its endpoint alone, repaired the interface measurement. Removing the input hole's extra stem then gave local costs 16/17/16/16 for (input absent/present, output unforced/forced), as recorded in `permutation_thin_hole_output.txt`. This is a modified construction, not an exact transcription of the paper.
+
+Composition still fails. Stacking two modified stages gives baseline 31, but the second output beam can be present at that same budget with both inputs absent; `leak_witness.json` retains a full 31-rectangle cover accepted by Prepare's independent target validator. A background rectangle from the first stage covers a left-staircase corner of the second, freeing a rectangle needed for the intended implication. Six of the 16 state rows completed before a later query timed out; that timeout is not a verdict. The initial solver also timed out before its redundant constraints were removed. The revised oracle matched Prepare on all 511 nonempty 3×3 patterns.
+
+This attempt therefore does not reconstruct a full reduction. Its exact beam and bounded-degree vertex templates remain useful, but the switch stack needs a new isolation strategy and a new general argument. Actual source/recovery checks: 0/0. Experience extraction: update the published beam route with the counting correction and retain the cross-stage cover as a regression.
 
 ## Next action
 
-Resolve exact beam interfaces, component placement and all-cover normalization in the same reconstruction attempt.
+Try a new stage-isolation construction in round 023: reset the left boundary between stages so earlier background rectangles cannot cover later staircase corners.

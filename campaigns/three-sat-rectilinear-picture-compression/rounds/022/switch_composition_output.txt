@@ -1,0 +1,7 @@
+{'cells': 5334, 'maximal_rectangles': 126, 'baseline': 31}
+{'inputs': (False, False), 'outputs': (False, False), 'actual': 31, 'expected': 31}
+{'inputs': (False, False), 'outputs': (False, True), 'actual': 31, 'expected': 32}
+{'inputs': (False, False), 'outputs': (True, False), 'actual': 32, 'expected': 32}
+{'inputs': (False, False), 'outputs': (True, True), 'actual': 32, 'expected': 33}
+{'inputs': (False, True), 'outputs': (False, False), 'actual': 31, 'expected': 31}
+{'inputs': (False, True), 'outputs': (False, True), 'actual': 31, 'expected': 31}

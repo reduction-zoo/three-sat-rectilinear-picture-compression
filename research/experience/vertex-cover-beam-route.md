@@ -15,3 +15,5 @@ Do not infer an explicit 3SAT-to-matrix reduction from an L-reduction statement 
 ## Use history
 
 Created 2026-09-25 from round 014. Intended board promotion is pending; the board was not edited.
+
+Round 021 removed the area objection by rank compression. Round 022 digitized the six-rectangle beam and a degree-1/2/3 vertex family, with baseline 8d+7 and a one-rectangle penalty for any nonempty output subset. The paper's component description says 8d+7 whereas its later count says 7d+7; the previous extracted offset is therefore not trustworthy without recomputation. A regularized switch had a valid finite local implication table but failed when stacked: a previous background rectangle covered the next stage's staircase corner. See [round 022](../../campaigns/three-sat-rectilinear-picture-compression/rounds/022/round.md) and its independently validated leaking cover. This is a failure of the reconstructed geometry, not a refutation of the published hardness result.

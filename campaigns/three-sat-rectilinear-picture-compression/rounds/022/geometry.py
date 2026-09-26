@@ -32,15 +32,22 @@ def maximal_rectangles(cells):
     return tuple(result)
 
 
-def cover(cells,required,budget,timeout=30000):
+def cover(cells,required,budget,timeout=30000,forced=()):
     assert required<=cells
     rects=maximal_rectangles(frozenset(cells))
-    solver=z3.Solver()
+    solver=z3.SolverFor("QF_FD")
     solver.set(timeout=timeout)
     chosen=[z3.Bool(f"rect{i}") for i in range(len(rects))]
+    for rect in forced:
+        solver.add(chosen[rects.index(rect)])
     solver.add(z3.PbLe([(v,1) for v in chosen],budget))
-    for r,c in required:
-        solver.add(z3.Or([v for v,(a,b,d,e) in zip(chosen,rects) if a<=r<=b and d<=c<=e]))
+    clauses={frozenset(i for i,(a,b,d,e) in enumerate(rects) if a<=r<=b and d<=c<=e)
+             for r,c in required}
+    minimal=[]
+    for clause in sorted(clauses,key=len):
+        if not any(other<=clause for other in minimal):
+            minimal.append(clause)
+            solver.add(z3.Or([chosen[i] for i in clause]))
     answer=solver.check()
     if answer==z3.unknown:
         raise RuntimeError(f"unknown: {solver.reason_unknown()}")
