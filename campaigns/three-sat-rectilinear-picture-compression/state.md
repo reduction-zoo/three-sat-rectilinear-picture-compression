@@ -1,6 +1,6 @@
 # Campaign state
 
-Budget: 40 rounds (20 additional rounds authorized after the first closeout). Used: 27. Remaining: 13. Status: `active`.
+Budget: 40 rounds (20 additional rounds authorized after the first closeout). Used: 28. Remaining: 12. Status: `active`.
 Board source: 834a23a845589826383af2fdf2f1425e02e88864.
 
 Capability probe (2026-09-25): Python 3.12.14 at `/Users/xiweipan/.local/bin/python3`; uv 0.12.17 at `/Users/xiweipan/.local/bin/uv`; Z3 executable 5.1.0 at `/opt/homebrew/bin/z3`; Kissat 4.0.4 at `/opt/homebrew/bin/kissat`; Typst 0.15.1 at `/opt/homebrew/bin/typst`; Lean 4.34.1 at `/opt/homebrew/bin/lean`; Lake 5.0.0 at `/opt/homebrew/bin/lake`. Python Z3 binding selected for Prepare; locked version recorded in `uv.lock`. Mathlib status: not probed because formalization is not requested. Writing skill is available in the session catalogue. No capability blocker for Prepare.
@@ -43,3 +43,4 @@ Closeout checks (2026-09-25): reran the Prepare self-test (120 source cases), ro
 | 025 | Span-blocking holes | Local implication and two-stage leak regression | Both barrier variants leak; exact covers retained, second SAT backend cross-checked | [record](rounds/025/round.md) |
 | 026 | Full journal construction and filters | Obtain detailed primary proof | Closed publisher copy; former author page unavailable | [record](rounds/026/round.md) |
 | 027 | Opposed beam translation pair | Exact four-state signal table | Exact local table and chains through four pairs pass; global routing open | [record](rounds/027/round.md) |
+| 028 | Vector-faithful permutation geometry | Recover boundary and exact signal table | Schematic closure leaks; corrected notch regularization has unwanted discount | [record](rounds/028/round.md) |
