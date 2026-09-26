@@ -1,0 +1,2 @@
+Preparation corpus passed: 120 distinct cases, 100 random, 20 edge
+self-test passed: 120 source cases, target positive/negative/malformed fixtures

@@ -11,6 +11,17 @@ def solve(cells,required,budget,forced=(),forbidden=(),timeout=30):
         if not any(set(other)<=clause for other in cnf): cnf.append(list(clause))
     for rect in forced: cnf.append([rects.index(rect)+1])
     for rect in forbidden: cnf.append([-rects.index(rect)-1])
+    chosen=solve_cnf(n,cnf,budget,timeout)
+    if chosen is None:return None
+    witness=[r for i,r in enumerate(rects,1) if i in chosen]
+    covered={(r,c) for a,b,d,e in witness for r in range(a,b+1) for c in range(d,e+1)}
+    assert required<=covered<=cells and len(witness)<=budget and all(r in witness for r in forced) and not any(r in witness for r in forbidden)
+    return witness
+
+
+def solve_cnf(n,clauses,budget,timeout=30):
+    """Solve clauses with at most budget of the first n variables true."""
+    cnf=[list(c) for c in clauses]
     var=n; prev=[]
     for x in range(1,n+1):
         curr=list(range(var+1,var+min(x,budget+1)+1)); var+=len(curr)
@@ -25,7 +36,6 @@ def solve(cells,required,budget,forced=(),forbidden=(),timeout=30):
     if result.returncode==20: return None
     if result.returncode!=10: raise RuntimeError(result.stderr+result.stdout)
     chosen={int(v) for line in result.stdout.splitlines() if line.startswith('v ') for v in line.split()[1:] if int(v)>0}
-    witness=[r for i,r in enumerate(rects,1) if i in chosen]
-    covered={(r,c) for a,b,d,e in witness for r in range(a,b+1) for c in range(d,e+1)}
-    assert required<=covered<=cells and len(witness)<=budget and all(r in witness for r in forced) and not any(r in witness for r in forbidden)
-    return witness
+    chosen={v for v in chosen if v<=n}
+    assert len(chosen)<=budget and all(any((v in chosen) if v>0 else (-v not in chosen) for v in clause) for clause in clauses)
+    return chosen

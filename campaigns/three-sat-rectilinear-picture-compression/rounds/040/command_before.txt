@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/xiweipan/Codes/reduction-zoo/three-sat-rectilinear-picture-compression/campaigns/three-sat-rectilinear-picture-compression/rounds/040/check_command.py", line 7, in <module>
+    result=subprocess.run([sys.executable,str(candidate)],input=json.dumps(source),text=True,capture_output=True,check=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xiweipan/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/xiweipan/Codes/reduction-zoo/three-sat-rectilinear-picture-compression/.venv/bin/python', '/Users/xiweipan/Codes/reduction-zoo/three-sat-rectilinear-picture-compression/campaigns/three-sat-rectilinear-picture-compression/work/algorithm.py']' returned non-zero exit status 2.

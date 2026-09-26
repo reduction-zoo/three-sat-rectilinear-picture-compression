@@ -1,0 +1,2 @@
+{'command': ['/Users/xiweipan/Codes/reduction-zoo/three-sat-rectilinear-picture-compression/.venv/bin/python', 'campaigns/three-sat-rectilinear-picture-compression/work/check.py', '--candidate', 'campaigns/three-sat-rectilinear-picture-compression/work/algorithm.py'], 'execution_limit_seconds': 30}
+{'execution_status': 'terminated at resource limit; no oracle verdict', 'seconds': 30.01371404100064}

@@ -1,22 +1,23 @@
 from pathlib import Path
-import json,sys,z3
+import json,sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[2]/'work'))
 from check import valid_source_witness,NO
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'025'))
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'022'))
+from kissat_cover import solve_cnf
 from graph import source_graph,recover_graph
 cases=json.loads((Path(__file__).resolve().parents[2]/'work/cases.json').read_text())
 outputs=0
 for index,case in enumerate(cases):
-    g=source_graph(case['source']);xs=[z3.Bool(f'v{i}') for i in range(g['n'])];s=z3.SolverFor('QF_FD');s.set(timeout=30000)
-    for a,b in g['edges']:s.add(z3.Or(xs[a],xs[b]))
-    if xs:s.add(z3.PbLe([(x,1) for x in xs],g['budget']))
-    first=s.check();assert first!=z3.unknown,(index,s.reason_unknown())
-    print({'case':index,'vertices':g['n'],'answer':str(first)},flush=True)
-    assert (first==z3.unsat)==(case['expected']==NO)
+    g=source_graph(case['source']);cnf=[[a+1,b+1] for a,b in g['edges']]
+    first=solve_cnf(g['n'],cnf,g['budget'])
+    print({'case':index,'vertices':g['n'],'answer':'unsat' if first is None else 'sat'},flush=True)
+    assert (first is None)==(case['expected']==NO)
     for _ in range(2):
-        if s.check()==z3.unsat:break
-        model=s.model();bits=[z3.is_true(model.eval(x,model_completion=True)) for x in xs]
-        C={i for i,on in enumerate(bits) if on}
+        chosen=first if _==0 else solve_cnf(g['n'],cnf,g['budget'])
+        if chosen is None:break
+        C={i-1 for i in chosen}
         assignment=recover_graph(case['source'],g,C)
         assert valid_source_witness(case['source'],assignment)
-        outputs+=1;s.add(z3.Or([x!=on for x,on in zip(xs,bits)]))
+        outputs+=1;cnf.append([-i if i in chosen else i for i in range(1,g['n']+1)])
 print({'source_cases':len(cases),'decoded_graph_covers':outputs})

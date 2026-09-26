@@ -1,0 +1,5 @@
+{'vertices': 2, 'edges': 1, 'budget': 1, 'modules': 6, 'shape': [91, 89], 'K': 88}
+{'decoded_vertex_cover': [1]}
+{'vertices': 2, 'edges': 1, 'budget': 0, 'modules': 6, 'shape': [91, 89], 'K': 87}
+{'vertices': 3, 'edges': 2, 'budget': 1, 'modules': 11, 'shape': [173, 164], 'K': 167}
+{'decoded_vertex_cover': [1]}

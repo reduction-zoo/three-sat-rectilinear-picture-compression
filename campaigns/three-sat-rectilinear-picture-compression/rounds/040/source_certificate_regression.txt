@@ -1,0 +1,1 @@
+All 14 source-state upper/lower certificates pass direct cell and bounding-box checks; no solver used.

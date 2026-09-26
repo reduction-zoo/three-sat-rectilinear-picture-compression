@@ -1,0 +1,1 @@
+All 24 routing-state cover/antirectangle certificates pass direct checks without a solver.

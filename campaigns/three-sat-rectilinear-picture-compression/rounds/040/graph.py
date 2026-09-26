@@ -21,6 +21,17 @@ def source_graph(source):
         for k in range(3):
             edges.add(tuple(sorted((vertices[k],vertices[(k+1)%3]))))
             edges.add(tuple(sorted((vertices[k],ports[j,k]))))
+    # Keep each occurrence pair near its clause to reduce routing distance.
+    rename={}
+    for occurrences_of_variable,vertices in zip(occurrences,variables):
+        for k,(j,pos,lit) in enumerate(occurrences_of_variable):
+            rename[vertices[2*k]]=9*j+2*pos
+            rename[vertices[2*k+1]]=9*j+2*pos+1
+    for j,vertices in enumerate(clause_vertices):
+        for k,v in enumerate(vertices):rename[v]=9*j+6+k
+    edges={tuple(sorted((rename[a],rename[b]))) for a,b in edges}
+    variables=[[rename[v] for v in vertices] for vertices in variables]
+    clause_vertices=[[rename[v] for v in vertices] for vertices in clause_vertices]
     return {'n':size,'edges':sorted(edges),'variables':variables,'clauses':clause_vertices,'budget':sum(len(v)//2 for v in variables)+2*len(clauses)}
 
 
