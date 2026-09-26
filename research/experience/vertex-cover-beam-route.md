@@ -25,3 +25,7 @@ Round 021 removed the area objection by rank compression. Round 022 digitized th
 ## Perpendicular crossing, 2026-09-25
 
 [Round 031](../../campaigns/three-sat-rectilinear-picture-compression/rounds/031/round.md) crosses the two shared rectangles of orthogonal translator pairs with disjoint cores. All 16 local states and 64 states of two joined crossings have exact additive unsupported-output penalties. Arbitrary network composition and routing remain unproved.
+
+## Vertical swap, 2026-09-25
+
+[Round 033](../../campaigns/three-sat-rectilinear-picture-compression/rounds/033/round.md) combines two turns with a perpendicular crossing. After separating the cores, its 16-state table is exact and two vertical channels exchange order. Ports are staggered in height; connecting them without corrupting costs remains open.

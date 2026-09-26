@@ -5,14 +5,18 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'031'))
 from crossing import crossing,pair,solve,maximal_rectangles
 
 def swap():
-    cells,inputs,outputs=crossing()
+    local,supplied,out=pair(60)
+    transform=lambda p:(p[1]-25,p[0]+25)
+    cells=local|{transform(p) for p in local}
+    inputs=[supplied,{transform(p) for p in supplied}]
+    outputs=[out,(out[2]-25,out[3]-25,out[0]+25,out[1]+25)]
     local,supplied,_=pair(24)
-    local={p for p in local if p[1]<=7}
-    before=lambda p:(p[0]-15,p[1]+6)
-    after=lambda p:(p[1]+15,p[0]+24)
+    local={p for p in local if p[1]<=12}
+    before=lambda p:(p[0]-25,p[1]+11)
+    after=lambda p:(p[1]+25,p[0]+39)
     cells|={before(p) for p in local}|{after(p) for p in local}
     inputs=[inputs[0],{before(p) for p in supplied if p in local}]
-    outputs=[outputs[0],(16,22,29,29)]
+    outputs=[outputs[0],(26,37,44,44)]
     return cells,inputs,outputs
 
 if __name__=='__main__':
