@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/xiweipan/Codes/reduction-zoo/three-sat-rectilinear-picture-compression/campaigns/three-sat-rectilinear-picture-compression/rounds/033/swap.py", line 24, in <module>
+    assert len(candidates)==1,candidates
+           ^^^^^^^^^^^^^^^^^^
+AssertionError: []
