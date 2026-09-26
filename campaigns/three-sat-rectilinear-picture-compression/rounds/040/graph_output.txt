@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/xiweipan/Codes/reduction-zoo/three-sat-rectilinear-picture-compression/campaigns/three-sat-rectilinear-picture-compression/rounds/040/check_graph.py", line 12, in <module>
+    first=s.check();assert first!=z3.unknown,(index,s.reason_unknown())
+                           ^^^^^^^^^^^^^^^^^
+AssertionError

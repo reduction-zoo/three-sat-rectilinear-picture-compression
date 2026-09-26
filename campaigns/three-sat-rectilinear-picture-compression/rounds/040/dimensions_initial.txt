@@ -1,0 +1,5 @@
+{'case': 2, 'variables': 1, 'clauses': 1, 'tracks': 24, 'modules': 131, 'shape': [3099, 2086], 'cells': 6464514}
+{'case': 16, 'variables': 3, 'clauses': 1, 'tracks': 18, 'modules': 85, 'shape': [1897, 1411], 'cells': 2676667}
+{'case': 40, 'variables': 2, 'clauses': 2, 'tracks': 46, 'modules': 384, 'shape': [9781, 5858], 'cells': 57297098}
+{'case': 70, 'variables': 4, 'clauses': 16, 'tracks': 384, 'modules': 18246, 'shape': [517949, 259191], 'cells': 134247719259}
+{'case': 110, 'variables': 5, 'clauses': 4, 'tracks': 96, 'modules': 1328, 'shape': [35715, 19653], 'cells': 701906895}

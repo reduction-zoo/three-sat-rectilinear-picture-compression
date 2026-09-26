@@ -1,0 +1,27 @@
+{'case': 0, 'vertices': 0, 'answer': 'sat'}
+{'case': 1, 'vertices': 0, 'answer': 'sat'}
+{'case': 2, 'vertices': 9, 'answer': 'sat'}
+{'case': 3, 'vertices': 9, 'answer': 'sat'}
+{'case': 4, 'vertices': 18, 'answer': 'unsat'}
+{'case': 5, 'vertices': 9, 'answer': 'sat'}
+{'case': 6, 'vertices': 9, 'answer': 'sat'}
+{'case': 7, 'vertices': 0, 'answer': 'sat'}
+{'case': 8, 'vertices': 18, 'answer': 'sat'}
+{'case': 9, 'vertices': 18, 'answer': 'unsat'}
+{'case': 10, 'vertices': 27, 'answer': 'unsat'}
+{'case': 11, 'vertices': 27, 'answer': 'unsat'}
+{'case': 12, 'vertices': 18, 'answer': 'sat'}
+{'case': 13, 'vertices': 18, 'answer': 'sat'}
+{'case': 14, 'vertices': 27, 'answer': 'sat'}
+{'case': 15, 'vertices': 18, 'answer': 'unsat'}
+{'case': 16, 'vertices': 9, 'answer': 'sat'}
+{'case': 17, 'vertices': 9, 'answer': 'sat'}
+{'case': 18, 'vertices': 18, 'answer': 'unsat'}
+{'case': 19, 'vertices': 0, 'answer': 'sat'}
+{'case': 20, 'vertices': 108, 'answer': 'sat'}
+{'case': 21, 'vertices': 126, 'answer': 'sat'}
+Traceback (most recent call last):
+  File "/Users/xiweipan/Codes/reduction-zoo/three-sat-rectilinear-picture-compression/campaigns/three-sat-rectilinear-picture-compression/rounds/040/check_graph.py", line 12, in <module>
+    first=s.check();assert first!=z3.unknown,(index,s.reason_unknown())
+                           ^^^^^^^^^^^^^^^^^
+AssertionError: (22, 'timeout')

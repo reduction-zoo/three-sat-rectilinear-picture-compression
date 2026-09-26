@@ -9,7 +9,7 @@ from capped_swap import capped_swap
 class Layout:
     def __init__(self,positions):
         self.positions=dict(enumerate(positions));self.outputs={};self.external={}
-        self.modules=[];self.interfaces=[];self.time=0;self.baseline=0
+        self.modules=[];self.interfaces=[];self.link_info=[];self.output_owner={};self.time=0;self.baseline=0
 
     def add(self,cells,inputs,outputs,labels,baseline,xmap):
         top=min(r for r,c in cells);bottom=max(r for r,c in cells)
@@ -35,10 +35,11 @@ class Layout:
             if previous:
                 assert previous[2]==incoming[2]
                 self.interfaces.append((previous[0],incoming[1],incoming[2],incoming[3]))
+                self.link_info.append({"producer":self.output_owner[label],"consumer":owner,"label":label})
             else:self.external[label]=incoming
         moved=[move(r) for r in outputs]
-        self.modules.append({'rectangles':rectangles,'inputs':input_rects,'outputs':moved,'labels':list(labels),'baseline':baseline})
-        for label,out in zip(labels,moved):self.outputs[label]=out;self.positions[label]=out[2]
+        self.modules.append({'rectangles':rectangles,'inputs':input_rects,'outputs':moved,'labels':list(labels),'baseline':baseline,'kind':'route'})
+        for label,out in zip(labels,moved):self.outputs[label]=out;self.positions[label]=out[2];self.output_owner[label]=owner
         self.baseline+=baseline;self.time=bottom+shift+4
 
     def translate(self,label,distance,wing='left'):
@@ -53,11 +54,10 @@ class Layout:
         self.add(cells,inputs,outputs,[left,right],46,lambda x:origin+x)
 
 
-def route(target):
-    n=len(target);assert sorted(target)==list(range(n))
-    pitch=100*(n+1)**2
-    layout=Layout([pitch*i for i in range(n)])
-    remaining=list(range(n));parking=(n+2)*pitch
+def permute(layout,target,pitch):
+    n=len(target)
+    remaining=sorted(target,key=lambda label:layout.positions[label])
+    parking=max((layout.positions[label] for label in target),default=0)+3*pitch
     for wanted in reversed(target):
         at=remaining.index(wanted)
         while at+1<len(remaining):
@@ -70,6 +70,12 @@ def route(target):
         remaining.pop()
         layout.translate(wanted,parking+pitch*target.index(wanted)-layout.positions[wanted])
     return layout
+
+
+def route(target):
+    n=len(target);assert sorted(target)==list(range(n))
+    pitch=100*(n+1)**2
+    return permute(Layout([pitch*i for i in range(n)]),target,pitch)
 
 
 def compress(layout):
