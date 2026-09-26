@@ -29,3 +29,7 @@ Round 021 removed the area objection by rank compression. Round 022 digitized th
 ## Vertical swap, 2026-09-25
 
 [Round 033](../../campaigns/three-sat-rectilinear-picture-compression/rounds/033/round.md) combines two turns with a perpendicular crossing. After separating the cores, its 16-state table is exact and two vertical channels exchange order. Ports are staggered in height; connecting them without corrupting costs remains open.
+
+## Wide signal corridors, 2026-09-25
+
+[Round 034](../../campaigns/three-sat-rectilinear-picture-compression/rounds/034/round.md) repairs a long mandatory corridor by a width-two side strip, and flattens the vertical swap ports. Single and double swap endpoint tables pass, but background sharing makes their baselines nonadditive. An interface-cut proof remains necessary.

@@ -1,0 +1,17 @@
+{'baseline': 91, 'rectangles': 252}
+{'in': (False, False), 'out': (False, False), 'expected': 91, 'below': False, 'at': True}
+{'in': (False, False), 'out': (False, True), 'expected': 92, 'below': False, 'at': True}
+{'in': (False, False), 'out': (True, False), 'expected': 92, 'below': False, 'at': True}
+{'in': (False, False), 'out': (True, True), 'expected': 93, 'below': False, 'at': True}
+{'in': (False, True), 'out': (False, False), 'expected': 91, 'below': False, 'at': True}
+{'in': (False, True), 'out': (False, True), 'expected': 91, 'below': False, 'at': True}
+{'in': (False, True), 'out': (True, False), 'expected': 92, 'below': False, 'at': True}
+{'in': (False, True), 'out': (True, True), 'expected': 92, 'below': False, 'at': True}
+{'in': (True, False), 'out': (False, False), 'expected': 91, 'below': False, 'at': True}
+{'in': (True, False), 'out': (False, True), 'expected': 92, 'below': False, 'at': True}
+{'in': (True, False), 'out': (True, False), 'expected': 91, 'below': False, 'at': True}
+{'in': (True, False), 'out': (True, True), 'expected': 92, 'below': False, 'at': True}
+{'in': (True, True), 'out': (False, False), 'expected': 91, 'below': False, 'at': True}
+{'in': (True, True), 'out': (False, True), 'expected': 91, 'below': False, 'at': True}
+{'in': (True, True), 'out': (True, False), 'expected': 91, 'below': False, 'at': True}
+{'in': (True, True), 'out': (True, True), 'expected': 91, 'below': False, 'at': True}
