@@ -1,0 +1,7 @@
+# Constant-degree source with one activation charge
+
+Use the explicit `padded_source(d)` picture from round 038, for d∈{1,2,3}. Its outputs are the whole maximal vertical beam rectangles, not endpoint cells. All picture cells, including all output-channel cells, are required.
+
+The minimum cover size including a specified output subset O is `9d+8+[O is nonempty]`. The 14 possible degree/subset cases have certificates in round 038's `certificates.json`. Each contains a cover of the claimed size and a set P of pairwise incompatible required cells outside the forced output rectangles, with `|P|+|O|` equal to that size. Any cover containing O must use those |O| distinct rectangles and at least |P| others. The direct checker reconstructs the cells, checks equality of the covered union and the picture, verifies the forced outputs, and tests every pairwise bounding box for a zero. It uses no solver or maximal-rectangle enumeration. Thus the finite cases establish the stated lemma for every allowed d and output subset.
+
+The bottom boundary consists of separated width-two tails immediately left of each beam. Incoming background on the right of the same beam gives a one-column interface. Non-beam columns can be duplicated to increase port separation; output columns stay unit width. Such duplication preserves the certificates by the rank-compression correspondence. Arbitrary graph layout and source-to-graph preprocessing remain separate obligations.

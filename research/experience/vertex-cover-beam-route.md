@@ -33,3 +33,7 @@ Round 021 removed the area objection by rank compression. Round 022 digitized th
 ## Wide signal corridors, 2026-09-25
 
 [Round 034](../../campaigns/three-sat-rectilinear-picture-compression/rounds/034/round.md) repairs a long mandatory corridor by a width-two side strip, and flattens the vertical swap ports. Single and double swap endpoint tables pass, but background sharing makes their baselines nonadditive. An interface-cut proof remains necessary.
+
+## Closed source certification, 2026-09-25
+
+[Round 038](../../campaigns/three-sat-rectilinear-picture-compression/rounds/038/round.md) replaces optional-channel endpoint tests by full-picture, whole-beam tests. Padded sources of degrees 1–3 have directly verified covers and antirectangle certificates for every output subset, establishing baseline 9d+8 plus one common activation charge.

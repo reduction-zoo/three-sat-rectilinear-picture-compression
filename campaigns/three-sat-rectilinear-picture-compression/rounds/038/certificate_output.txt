@@ -1,0 +1,14 @@
+{'degree': 1, 'state': (False,), 'packing': 17}
+{'degree': 1, 'state': (True,), 'packing': 17}
+{'degree': 2, 'state': (False, False), 'packing': 26}
+{'degree': 2, 'state': (False, True), 'packing': 26}
+{'degree': 2, 'state': (True, False), 'packing': 26}
+{'degree': 2, 'state': (True, True), 'packing': 25}
+{'degree': 3, 'state': (False, False, False), 'packing': 35}
+{'degree': 3, 'state': (False, False, True), 'packing': 35}
+{'degree': 3, 'state': (False, True, False), 'packing': 35}
+{'degree': 3, 'state': (False, True, True), 'packing': 34}
+{'degree': 3, 'state': (True, False, False), 'packing': 35}
+{'degree': 3, 'state': (True, False, True), 'packing': 34}
+{'degree': 3, 'state': (True, True, False), 'packing': 34}
+{'degree': 3, 'state': (True, True, True), 'packing': 33}

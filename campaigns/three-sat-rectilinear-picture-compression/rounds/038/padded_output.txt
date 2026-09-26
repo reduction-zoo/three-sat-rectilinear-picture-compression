@@ -1,0 +1,17 @@
+{'degree': 1, 'baseline': 17, 'outputs': [(1, 23, 5, 5)]}
+{'state': (False,), 'expected': 17, 'below': False, 'at': True}
+{'state': (True,), 'expected': 18, 'below': False, 'at': True}
+{'degree': 2, 'baseline': 26, 'outputs': [(1, 36, 5, 5), (13, 36, -1, -1)]}
+{'state': (False, False), 'expected': 26, 'below': False, 'at': True}
+{'state': (False, True), 'expected': 27, 'below': False, 'at': True}
+{'state': (True, False), 'expected': 27, 'below': False, 'at': True}
+{'state': (True, True), 'expected': 27, 'below': False, 'at': True}
+{'degree': 3, 'baseline': 35, 'outputs': [(1, 49, 5, 5), (13, 49, -1, -1), (25, 49, -7, -7)]}
+{'state': (False, False, False), 'expected': 35, 'below': False, 'at': True}
+{'state': (False, False, True), 'expected': 36, 'below': False, 'at': True}
+{'state': (False, True, False), 'expected': 36, 'below': False, 'at': True}
+{'state': (False, True, True), 'expected': 36, 'below': False, 'at': True}
+{'state': (True, False, False), 'expected': 36, 'below': False, 'at': True}
+{'state': (True, False, True), 'expected': 36, 'below': False, 'at': True}
+{'state': (True, True, False), 'expected': 36, 'below': False, 'at': True}
+{'state': (True, True, True), 'expected': 36, 'below': False, 'at': True}
