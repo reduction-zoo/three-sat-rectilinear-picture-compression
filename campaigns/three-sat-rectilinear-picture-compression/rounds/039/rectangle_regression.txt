@@ -1,0 +1,2 @@
+all maximal rectangles agree on 512 binary 3x3 pictures
+511 nonempty patterns: reduced clauses and native solver agree with Prepare

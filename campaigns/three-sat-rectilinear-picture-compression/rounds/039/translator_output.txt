@@ -1,0 +1,4 @@
+{'distance': 8, 'wing': 'left', 'costs': [16, 17, 16, 16]}
+{'distance': 8, 'wing': 'right', 'costs': [16, 17, 16, 16]}
+{'distance': 31, 'wing': 'left', 'costs': [16, 17, 16, 16]}
+{'distance': 31, 'wing': 'right', 'costs': [16, 17, 16, 16]}

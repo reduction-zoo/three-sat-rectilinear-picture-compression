@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/xiweipan/Codes/reduction-zoo/three-sat-rectilinear-picture-compression/campaigns/three-sat-rectilinear-picture-compression/rounds/039/routing.py", line 100, in <module>
+    cells,inputs,outputs,owners,interfaces,xs,ys=compress(layout)
+                                                 ^^^^^^^^^^^^^^^^
+  File "/Users/xiweipan/Codes/reduction-zoo/three-sat-rectilinear-picture-compression/campaigns/three-sat-rectilinear-picture-compression/rounds/039/routing.py", line 88, in compress
+    assert owners.get((r,col),owner)==owner,('overlap',owner,owners[(r,col)],r,col)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('overlap', 6, 4, 119, 118)

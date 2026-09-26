@@ -10,7 +10,8 @@ def maximal_rectangles(cells):
         return ()
     rmin,rmax=min(r for r,c in cells),max(r for r,c in cells)
     cmin,cmax=min(c for r,c in cells),max(c for r,c in cells)
-    rows={r:sum(1<<(c-cmin) for rr,c in cells if rr==r) for r in range(rmin,rmax+1)}
+    rows=dict.fromkeys(range(rmin,rmax+1),0)
+    for r,c in cells: rows[r] |= 1<<(c-cmin)
     result=[]
     for top in range(rmin,rmax+1):
         common=(1<<(cmax-cmin+1))-1
@@ -18,17 +19,15 @@ def maximal_rectangles(cells):
             common &= rows[bottom]
             if not common:
                 break
-            c=0
-            while c<=cmax-cmin:
-                if not (common>>c)&1:
-                    c+=1
-                    continue
-                left=c
-                while (common>>c)&1:
-                    c+=1
-                mask=((1<<(c-left))-1)<<left
+            bits=common
+            while bits:
+                left=(bits&-bits).bit_length()-1
+                shifted=bits>>left
+                width=(shifted^(shifted+1)).bit_length()-1
+                mask=((1<<width)-1)<<left
+                bits &= ~mask
                 if (rows.get(top-1,0)&mask)!=mask and (rows.get(bottom+1,0)&mask)!=mask:
-                    result.append((top,bottom,left+cmin,c-1+cmin))
+                    result.append((top,bottom,left+cmin,left+width-1+cmin))
     return tuple(result)
 
 
