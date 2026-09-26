@@ -1,0 +1,1 @@
+All four terminal states have directly checkable antirectangle and cover certificates.

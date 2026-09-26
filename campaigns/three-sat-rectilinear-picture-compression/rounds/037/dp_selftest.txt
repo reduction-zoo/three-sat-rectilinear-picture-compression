@@ -1,0 +1,1 @@
+Residual DP: 1022 full/partial cases agree with independently encoded Kissat bounds.
