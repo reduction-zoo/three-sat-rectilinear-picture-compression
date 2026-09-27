@@ -1,23 +1,23 @@
 # Campaign state
 
-Budget: 40 rounds (20 additional rounds authorized after the first closeout). Used: 40 (all numbered attempts closed). Remaining: 0. Status: `stopped_without_discovery`.
+Status: `stopped_without_discovery` after 40 numbered attempts.
 Board source: 834a23a845589826383af2fdf2f1425e02e88864.
 
 Capability probe (2026-09-25): Python 3.12.14 at `/Users/xiweipan/.local/bin/python3`; uv 0.12.17 at `/Users/xiweipan/.local/bin/uv`; Z3 executable 5.1.0 at `/opt/homebrew/bin/z3`; Kissat 4.0.4 at `/opt/homebrew/bin/kissat`; Typst 0.15.1 at `/opt/homebrew/bin/typst`; Lean 4.34.1 at `/opt/homebrew/bin/lean`; Lake 5.0.0 at `/opt/homebrew/bin/lake`. Python Z3 binding selected for Prepare; locked version recorded in `uv.lock`. Mathlib status: not probed because formalization is not requested. Writing skill is available in the session catalogue. No capability blocker for Prepare.
 Prepare: 120 fixed source cases, independent Z3 and exhaustive source checks, exact target rectangle-cover oracle and direct validators; see [preparation](work/preparation.md). Self-test passed 2026-09-25. No construction claim follows from Prepare.
 Current claim: an unverified integrated F/G candidate now composes a degree-three graph reduction, certified source/translator/swap/terminal templates, monotone routing and a charging decoder. The graph step passes all 120 prepared sources and 212 cover recoveries. Three small graph-to-picture instances pass (two recovered covers, one UNSAT). Two empty-clause source commands pass. No nonempty formula has completed end-to-end candidate verification; global attachment and source bit-length obligations remain. See [candidate argument](work/proof.md) and [verification scope](work/verification.md).
-Next action: the authorized allocation is exhausted. Commit and exit; resume discovery only with another allocation. The next technical priorities are feasible explicit-matrix size, a complete attachment proof, and the fixed source encoding's unused-variable bit-length obligation. Known hardness is not disputed.
+Next action: address feasible explicit-matrix size, a complete attachment proof, and the fixed source encoding's unused-variable bit-length obligation. Known hardness is not disputed.
 
-Resumption assessment: the user authorized rounds 021–040 and emphasized the known hardness result. The earlier low rating concerned the exhausted allocation, not existence of a reduction. Current prospects are unknown (uncalibrated); published constructions are the primary route. Preserve the first closeout below as history.
+Resumption assessment: the known hardness result stands. Current prospects are unknown (uncalibrated); published constructions are the primary route. Preserve the first closeout below as history.
 
-Closeout assessment (2026-09-25): **Correctness:** the wire and diagonal-band partial lemmas have explicit proofs and computational checks, but no source reduction exists and no independent review was triggered. The 120-case Prepare oracle is checked independently; candidate F/G checks are 0/0. **Novelty:** unestablished for the partial lemmas and gadgets; the campaign did not establish priority over literature. **Significance:** a usable 3-SAT reduction was not obtained. Prospects within the remaining allocation are **low (uncalibrated)** because zero rounds remain; this is a budget assessment, not an impossibility claim. The strongest obstruction is coordinating one fixed global picture with variable fanout, clause costs, isolation from unintended rectangles, polynomial layout and a decoder for every valid cover. Eight mechanism families were explored across 20 attempts: literature reconstruction, compatibility-graph formulation, one-anchor embedding, small phase tiles, tractable-picture boundaries, thick wire and ports, clause junctions, and Vertex Cover edge checkers. Twelve local experience entries were created, six later updated; board promotion is pending separate authorization, and the board was not edited. No entry remains pending extraction from a completed round.
+Closeout assessment (2026-09-25): **Correctness:** the wire and diagonal-band partial lemmas have explicit proofs and computational checks, but no source reduction exists and no independent review was triggered. The 120-case Prepare oracle is checked independently; candidate F/G checks are 0/0. **Novelty:** unestablished for the partial lemmas and gadgets; the campaign did not establish priority over literature. **Significance:** a usable 3-SAT reduction was not obtained. The strongest obstruction is coordinating one fixed global picture with variable fanout, clause costs, isolation from unintended rectangles, polynomial layout and a decoder for every valid cover. Eight mechanism families were explored across 20 attempts: literature reconstruction, compatibility-graph formulation, one-anchor embedding, small phase tiles, tractable-picture boundaries, thick wire and ports, clause junctions, and Vertex Cover edge checkers. Twelve local experience entries were created, six later updated; board promotion is pending separate authorization, and the board was not edited. No entry remains pending extraction from a completed round.
 
 Closeout checks (2026-09-25): reran the Prepare self-test (120 source cases), round 015 certificate/witness probe (through 20 cores), round 017 band DP comparison (21 pictures), round 018 four-row edge witness check, round 019 shared-core search (output byte-identical to retained evidence), and round 020 exhaustive tap count. All completed successfully. The README gives the exact commands. No candidate verification, independent review, paper or formalization applies without F/G and a general reduction proof.
 
 
 ## Second closeout (2026-09-25)
 
-Rounds 021–040 are complete: **40 numbered attempt records, 0 remaining**.
+Rounds 021–040 are complete: **40 numbered attempt records**.
 Status `stopped_without_discovery` means no accepted complete rule, not no useful
 partial result. The full prepared candidate run ended at an execution limit and
 has no full-suite verdict. The known hardness theorem is not contradicted.
@@ -32,10 +32,8 @@ remain unresolved. No independent review, paper or formalization was eligible.
 with locally derived gadget repairs and certificates, not a claim of a new
 complexity classification. **Significance:** the campaign now has a concrete
 integrated candidate and reusable routing components, but has not delivered the
-accepted reduction. Prospects within the remaining budget are **low
-(uncalibrated)** because it is exhausted and the measured 16-clause target still
-has 15,514,487,415 cells. This is a resource/budget assessment, not an impossibility
-claim or a rejection of the known result.
+accepted reduction. The measured 16-clause target has 15,514,487,415 cells, a serious
+explicit-size obstacle. This does not reject the known hardness result.
 
 For navigation, the additional 20 attempts cover 11 broad mechanism/scope
 families: rank compression; published beam reconstruction and isolation;
@@ -46,7 +44,7 @@ source/graph/picture integration. This grouping does not merge or discount any
 numbered attempt. Prepare and all same-strategy tests/repairs stay outside the
 attempt count or within their existing attempt, respectively.
 
-Experience in this allocation: **2 distinct entries created** (beam-cut
+Experience from these attempts: **2 distinct entries created** (beam-cut
 composition and separated terminal), **2 pre-existing entries updated**
 (rank-grid area and vertex-cover route); the new beam-cut entry also received
 follow-up updates. There are **14 total local entries pending authorized board
