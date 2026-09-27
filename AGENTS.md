@@ -1,8 +1,5 @@
-# Research campaign
+# Research instructions
 
-Use research-session and research/repository.md. Fixed question: campaigns/three-sat-rectilinear-picture-compression/question.md.
-Board checkout (read-only shared experience): /Users/xiweipan/Codes/autoresearch-gadgets
-Write research artifacts only in this repository. Use uv and retain incremental commits.
-Do not create remotes, publish, or edit the board during research; separate human approval is required before publication.
-The runner sends one initial prompt and observes when the CLI exits.
-Use the registered research-reviewer with a fresh context when the review stage requires it.
+Read the [fixed question](campaigns/three-sat-rectilinear-picture-compression/question.md), [prior state](campaigns/three-sat-rectilinear-picture-compression/state.md) and [preparation notes](campaigns/three-sat-rectilinear-picture-compression/work/preparation.md). The fixed [test corpus](campaigns/three-sat-rectilinear-picture-compression/work/cases.json) and [verifier](campaigns/three-sat-rectilinear-picture-compression/work/check.py) are the starting evidence; the preparation notes state their coverage and any pending checks.
+
+Run `uv sync --locked`, then `uv run --locked python campaigns/three-sat-rectilinear-picture-compression/work/check.py --self-test` before relying on that evidence. Follow the current user's AutoResearch pipeline. Scope and budgets in the state describe earlier work and do not limit a new campaign. Preserve prior evidence, commit new work incrementally and make only evidence-backed claims.
