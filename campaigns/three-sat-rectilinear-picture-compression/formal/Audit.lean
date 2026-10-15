@@ -1,0 +1,3 @@
+import Challenge
+#print axioms ThreeSatRectilinearPictureCompression.Goal
+#print axioms ThreeSatRectilinearPictureCompression.solve

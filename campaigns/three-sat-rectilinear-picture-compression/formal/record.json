@@ -1,0 +1,7 @@
+{
+  "id": "Q054",
+  "source_definition": "A Boolean CNF formula with three literals per clause is given explicitly. Return a satisfying truth assignment. Return NO-SOLUTION exactly when no such witness exists. Graphs, families and strings are explicit; numerical parameters use binary encodings.",
+  "target_definition": "Given a binary matrix and K, return at most K axis-aligned rectangles with integer row and column endpoints whose union is exactly the matrix's one entries. A valid output is a witness satisfying these conditions, or NO-SOLUTION exactly when none exists.",
+  "required_result": "Construct deterministic polynomial-time maps F and G. F must produce a legal target instance, and G(x,y) must return a valid source output for every valid target output y, including NO-SOLUTION. A complete rule may reconstruct a published construction or give a new one; it must specify every gadget, numerical parameter and decoding step.",
+  "equation": ""
+}
